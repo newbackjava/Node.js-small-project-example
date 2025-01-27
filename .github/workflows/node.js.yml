@@ -19,6 +19,8 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
+    - run: npm test
+      continue-on-error: true
     - run: npm run build
     - name: Deploy to Production
       run: echo "Deploy step would go here"
