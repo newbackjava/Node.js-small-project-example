@@ -19,9 +19,6 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
-    - run: |
-        echo "Skipping tests as no tests are specified"
-        true
     - run: npm run build
     - name: Deploy to Production
       run: echo "Deploy step would go here"
