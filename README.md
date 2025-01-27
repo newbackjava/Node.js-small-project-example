@@ -1,3 +1,5 @@
+![Node.js CI/CD](https://github.com/USERNAME/REPOSITORY/workflows/Node.js%20CI/CD/badge.svg)
+
 # 📌 노드 입문자들을 위한 간단 예제
 
 노드를 입문하는 개발자들을 위한 작은 예제입니다  
