@@ -19,8 +19,19 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
-    - run: npm test
-      continue-on-error: true
-    - run: npm run build
+    - name: Check and run npm test
+      run: |
+        if npm run | grep -q "test"; then
+          npm test;
+        else
+          echo "No test script defined, skipping tests.";
+        fi
+    - name: Check and run npm build
+      run: |
+        if npm run | grep -q "build"; then
+          npm run build;
+        else
+          echo "No build script defined, skipping build.";
+        fi
     - name: Deploy to Production
       run: echo "Deploy step would go here"
