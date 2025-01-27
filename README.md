@@ -1,4 +1,4 @@
-![Node.js CI/CD](https://github.com/USERNAME/REPOSITORY/workflows/Node.js%20CI/CD/badge.svg)
+[![Node.js CI/CD](https://github.com/newbackjava/Node.js-small-project-example/actions/workflows/node.js.yml/badge.svg)](https://github.com/newbackjava/Node.js-small-project-example/actions/workflows/node.js.yml)
 
 # 📌 노드 입문자들을 위한 간단 예제
 
